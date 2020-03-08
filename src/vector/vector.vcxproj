@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA0C1F4D-15AA-401F-A8A3-D5CF592DF35E}</ProjectGuid>
+    <RootNamespace>vector</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\..\_executable\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\..\_executable\$(Configuration).$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\..\_executable\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\..\_executable\$(Configuration).$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;DSA_STACK_LIST;DSA_PQ_COMPLHEAP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <ProgramDataBaseFileName />
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <XMLDocumentationFileName />
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BrowseInformationFile />
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AssemblerListingLocation />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ManifestFile />
+      <ProgramDatabaseFile />
+      <ProfileGuidedDatabase />
+      <LinkTimeCodeGeneration />
+    </Link>
+    <BuildLog>
+      <Path>..\..\_executable\$(Configuration).$(ProjectName)\$(ProjectName).log</Path>
+    </BuildLog>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Bscmake>
+      <OutputFile />
+    </Bscmake>
+    <Xdcmake>
+      <OutputFile />
+    </Xdcmake>
+    <Xdcmake>
+      <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
+    </Xdcmake>
+    <Manifest>
+      <OutputManifestFile />
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\UniPrint\print_basic.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\fibonacci\Fib.h" />
+    <ClInclude Include="..\_share\checkOrder_Elem.h" />
+    <ClInclude Include="..\_share\checkOrder_vector.h" />
+    <ClInclude Include="..\_share\comparator.h" />
+    <ClInclude Include="..\_share\crc_Elem.h" />
+    <ClInclude Include="..\_share\crc_vector.h" />
+    <ClInclude Include="..\_share\double_Elem.h" />
+    <ClInclude Include="..\_share\Hailstone_Elem.h" />
+    <ClInclude Include="..\_share\increase_Elem.h" />
+    <ClInclude Include="..\_share\increase_vector.h" />
+    <ClInclude Include="..\_share\rand.h" />
+    <ClInclude Include="..\_share\release.h" />
+    <ClInclude Include="..\_share\util.h" />
+    <ClInclude Include="permute.h" />
+    <ClInclude Include="vector.h" />
+    <ClInclude Include="vector_assignment.h" />
+    <ClInclude Include="vector_bracket.h" />
+    <ClInclude Include="vector_bubblesort_A.h" />
+    <ClInclude Include="vector_bubblesort_B.h" />
+    <ClInclude Include="vector_bubblesort_C.h" />
+    <ClInclude Include="vector_constructor_by_copying.h" />
+    <ClInclude Include="Vector_deduplicate.h" />
+    <ClInclude Include="vector_deduplicate_1.h" />
+    <ClInclude Include="vector_deduplicate_wrong_1.h" />
+    <ClInclude Include="vector_expand.h" />
+    <ClInclude Include="vector_find.h" />
+    <ClInclude Include="vector_heapSort.h" />
+    <ClInclude Include="vector_implementation.h" />
+    <ClInclude Include="Vector_insert.h" />
+    <ClInclude Include="Vector_merge.h" />
+    <ClInclude Include="vector_mergeSort.h" />
+    <ClInclude Include="vector_partition_A.h" />
+    <ClInclude Include="vector_partition_A1.h" />
+    <ClInclude Include="vector_partition_B.h" />
+    <ClInclude Include="vector_partition_B1.h" />
+    <ClInclude Include="vector_partition_C.h" />
+    <ClInclude Include="vector_quickSort.h" />
+    <ClInclude Include="vector_remove.h" />
+    <ClInclude Include="vector_removeInterval.h" />
+    <ClInclude Include="Vector_search.h" />
+    <ClInclude Include="Vector_search_binary_A.h" />
+    <ClInclude Include="Vector_search_binary_B.h" />
+    <ClInclude Include="Vector_search_binary_C.h" />
+    <ClInclude Include="Vector_search_fibonaccian_A.h" />
+    <ClInclude Include="Vector_search_fibonaccian_B.h" />
+    <ClInclude Include="vector_selectionsort.h" />
+    <ClInclude Include="vector_shellSort.h" />
+    <ClInclude Include="vector_shrink.h" />
+    <ClInclude Include="vector_sort.h" />
+    <ClInclude Include="vector_test.h" />
+    <ClInclude Include="vector_traverse.h" />
+    <ClInclude Include="Vector_uniquify.h" />
+    <ClInclude Include="vector_unsort.h" />
+    <ClInclude Include="Vector_unsorted.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="huffman_decode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huffman_encode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huffman_generateTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huffman_generateTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huffman_initForest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Huffman_PQ_Test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huffman_statistics.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\prime\primeNLT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UniPrint\print_basic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UniPrint\print_HuffChar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\binTree\BinNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinNode_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinNode_insert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinNode_travInorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinNode_travLevel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinNode_travPostorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinNode_travPreorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinNode_updateHeight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinTree_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinTree_remove.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\binTree\BinTree_size.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="huffChar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HuffCode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Huffman_PQ.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Huffman_PQ_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="huffman_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HuffTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

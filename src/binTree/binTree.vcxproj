@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>BinTree</ProjectName>
+    <ProjectGuid>{6FB49C32-97BD-43CE-997B-D86178877C80}</ProjectGuid>
+    <RootNamespace>binTree</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\..\_executable\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\..\_executable\$(Configuration).$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\..\_executable\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\..\_executable\$(Configuration).$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;DSA_STACK_VECTOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <ProgramDataBaseFileName />
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <XMLDocumentationFileName />
+      <BrowseInformationFile />
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AssemblerListingLocation />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProfileGuidedDatabase />
+      <LinkTimeCodeGeneration />
+      <ProgramDatabaseFile />
+      <ManifestFile />
+    </Link>
+    <BuildLog>
+      <Path>..\..\_executable\$(Configuration).$(ProjectName)\$(ProjectName).log</Path>
+    </BuildLog>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Bscmake>
+      <OutputFile />
+    </Bscmake>
+    <Xdcmake>
+      <OutputFile />
+    </Xdcmake>
+    <Xdcmake>
+      <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
+    </Xdcmake>
+    <Manifest>
+      <OutputManifestFile />
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\UniPrint\print_basic.cpp" />
+    <ClCompile Include="..\UniPrint\print_HuffChar.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_share\comparator.h" />
+    <ClInclude Include="..\_share\double_Elem.h" />
+    <ClInclude Include="..\_share\Hailstone_Elem.h" />
+    <ClInclude Include="..\_share\increase_Elem.h" />
+    <ClInclude Include="BinNode.h" />
+    <ClInclude Include="BinNode_implementation.h" />
+    <ClInclude Include="BinNode_insert.h" />
+    <ClInclude Include="BinNode_macro.h" />
+    <ClInclude Include="BinNode_macro_AVL.h" />
+    <ClInclude Include="BinNode_macro_BASIC.h" />
+    <ClInclude Include="BinNode_macro_RedBlack.h" />
+    <ClInclude Include="BinNode_size.h" />
+    <ClInclude Include="BinNode_stretchByZag.h" />
+    <ClInclude Include="BinNode_stretchByZig.h" />
+    <ClInclude Include="BinNode_succ.h" />
+    <ClInclude Include="BinNode_travInorder.h" />
+    <ClInclude Include="BinNode_TravInorder_I1.h" />
+    <ClInclude Include="BinNode_TravInorder_I2.h" />
+    <ClInclude Include="BinNode_TravInorder_I3.h" />
+    <ClInclude Include="BinNode_TravInorder_I4.h" />
+    <ClInclude Include="BinNode_travInorder_R.h" />
+    <ClInclude Include="BinNode_travLevel.h" />
+    <ClInclude Include="BinNode_travPostorder.h" />
+    <ClInclude Include="BinNode_travPostorder_I.h" />
+    <ClInclude Include="BinNode_travPostorder_R.h" />
+    <ClInclude Include="BinNode_travPreorder.h" />
+    <ClInclude Include="BinNode_TravPreorder_I1.h" />
+    <ClInclude Include="BinNode_TravPreorder_I2.h" />
+    <ClInclude Include="BinNode_travPreorder_R.h" />
+    <ClInclude Include="BinNode_zag.h" />
+    <ClInclude Include="BinNode_zig.h" />
+    <ClInclude Include="BinTree.h" />
+    <ClInclude Include="BinTree_attach.h" />
+    <ClInclude Include="BinTree_implementation.h" />
+    <ClInclude Include="BinTree_insert.h" />
+    <ClInclude Include="BinTree_remove.h" />
+    <ClInclude Include="BinTree_secede.h" />
+    <ClInclude Include="BinTree_size.h" />
+    <ClInclude Include="BinTree_test.h" />
+    <ClInclude Include="BinTree_updateHeight.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

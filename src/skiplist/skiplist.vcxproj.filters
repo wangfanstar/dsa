@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UniPrint\print_basic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UniPrint\print_HuffChar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_share\comparator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Comparator\comparator_Entry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Comparator\comparator_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dictionary\Dictionary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Entry\Entry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_binNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_bintree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_Entry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_HashTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_PQ_ComplHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_PQ_LeftHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_PQ_List.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_QuadList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_SkipList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UniPrint\print_traversable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadList_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadList_initialize.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadList_insert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadList_remove.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadList_traverse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadListNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadListNode_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadListNode_insert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_share\release.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkipList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkipList_get.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkipList_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkipList_put.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkipList_remove.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkipList_skipSearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkipList_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_share\util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

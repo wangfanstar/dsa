@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UniPrint\print_basic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UniPrint\print_HuffChar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_insert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_macro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_macro_AVL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_macro_BASIC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_macro_RedBlack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_size.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_stretchByZag.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_stretchByZig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_succ.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_travInorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_TravInorder_I1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_TravInorder_I2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_TravInorder_I3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_TravInorder_I4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_travInorder_R.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_travLevel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_travPostorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_travPostorder_I.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_travPostorder_R.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_travPreorder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_TravPreorder_I1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_TravPreorder_I2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_travPreorder_R.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_zag.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinNode_zig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree_attach.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree_implementation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree_insert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree_remove.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree_secede.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree_size.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree_updateHeight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_share\comparator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_share\double_Elem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_share\Hailstone_Elem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_share\increase_Elem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
